@@ -8,25 +8,18 @@
         position: relative;
         padding-left: 15px;
         z-index: 2;
-        font-size: 14px;
         @include before_circle;
-    }
-    &__title {
-        font-size: 48px;
-        position: relative;
-        &::before {
-            content: "";
-            display: block;
-            position: absolute;
-            left: 0;
-            top: 100%;
-            border: 3px solid #ffa501;
-            width: 60px;
-            height: 0px;
+        &:before {
+            top: 11px;
         }
     }
+    &__divider {
+        border: 3px solid #ffa501;
+        width: 60px;
+        height: 0px;
+    }
     &__text {
-        margin-top: 30px;
+        margin-top: 15px;
     }
     &__skill-wrap {
         margin-top: 40px;
@@ -34,7 +27,7 @@
         grid-template-columns: repeat(2, 1fr);
         padding-left: 50px;
         column-gap: 50px;
-        row-gap: 50px;
+        row-gap: 70px;
     }
     &__skills-1 {
         width: 260px;
@@ -42,14 +35,14 @@
         z-index: 2;
         position: relative;
         @include img_circle;
-        h5 {
+        div {
             position: relative;
             &::before {
                 content: "";
                 display: block;
                 position: absolute;
                 left: -40px;
-                top: 14px;
+                top: 34px;
                 width: 25px;
                 height: 24px;
                 background: url('../icons/about_me/web_development.svg') center center / cover no-repeat;
@@ -62,8 +55,7 @@
     z-index: 2;
     position: relative;
     @include img_circle;
-
-    h5 {
+    div {
         position: relative;
 
         &::before {
@@ -71,7 +63,7 @@
             display: block;
             position: absolute;
             left: -35px;
-            top: 14px;
+            top: 34px;
             width: 13px;
             height: 24px;
             background: url('../icons/about_me/mobile_dev.svg') center center / cover no-repeat;
@@ -84,8 +76,7 @@
     z-index: 2;
     position: relative;
     @include img_circle;
-
-    h5 {
+    div {
         position: relative;
 
         &::before {
@@ -93,7 +84,7 @@
             display: block;
             position: absolute;
             left: -40px;
-            top: 14px;
+            top: 34px;
             width: 25px;
             height: 24px;
             background: url('../icons/about_me/design.svg') center center / cover no-repeat;
