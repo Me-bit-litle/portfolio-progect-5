@@ -1,0 +1,74 @@
+.skills {
+    padding-top: 126px;       
+    &__divider {
+        margin: 25px auto 0 auto;
+        border: 3px solid #ffa501;
+        width: 60px;
+        height: 0px;
+    }
+    &__title {
+        position: relative;
+        text-align: center;
+        @include before_circle;
+        &:before {
+            top: -6px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    &__subtitle {
+        text-align: center;
+    }
+    &__wrapper {
+        margin: 60px 10px 0 10px;
+        display: grid;
+        grid-template-columns: repeat(4, 270px);
+        gap: 13px;
+    }
+    &__card {
+        border: 1px solid #000;
+        width: 270px;
+        padding: 30px;
+    }
+    &__line {
+        &-wrapper {
+            margin-top: 128px;
+            display: grid;
+            grid-template-columns: repeat(3, 350px);
+            column-gap: 50px;
+            row-gap: 30px;
+        }
+        &-wrap {
+            display: flex;
+            justify-content: space-between;
+        }
+        &-text {
+            position: relative;
+            padding-top: -20px;
+            &::before {
+                content: '';
+                position: absolute;
+                z-index: -1;
+                top: 20%;
+                left: -10%;
+                border-radius: 100%;
+                width: 36px;
+                height: 36px;
+                background: $main-color;
+            }
+        }
+        &-bar {
+            display: block;
+            border-radius: 4px;
+            width: 350px;
+            height: 14px;
+            background: #e8e4de;
+            span {
+                display: block;
+                background-color: #FFA501;
+                height: 14px;
+                border-radius: 4px;
+            }
+        }
+    }
+}

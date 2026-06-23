@@ -9,6 +9,9 @@
         width: 36px;
         height: 36px;
         background: $main-color;
+        &::before.skills__line-text {
+            top: 25%;
+        }
     }
 }
 

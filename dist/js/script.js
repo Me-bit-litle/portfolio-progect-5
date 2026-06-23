@@ -8,3 +8,10 @@ hamburger.addEventListener('click', () => {
 close.addEventListener('click', () => {
     menu.classList.remove('active');
 })
+
+const counters = document.querySelectorAll('.skills__ratings-counter'),
+      lines = document.querySelectorAll('.skills__line-bar span');
+
+counters.forEach( (item, i) => {
+    lines[i].style.width = item.innerHTML;
+})
