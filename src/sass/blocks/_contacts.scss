@@ -1,0 +1,114 @@
+.contacts {
+    padding: 126px 0 91px 0;
+    &__wrapper {
+        display: grid;
+        padding: 0 35px 0 52px;
+        grid-template-columns: 400px 585px;
+        justify-content: space-between;
+    }
+    &__subtitle {
+        position: relative;
+        padding-left: 15px;
+        z-index: 2;
+         @include before_circle;
+        &:before {
+            top: 11px;
+            }
+        }
+    &__divider {
+        border: 3px solid #ffa501;
+        width: 60px;
+        height: 0px;
+    }
+    &__text {
+        margin-top: 20px;
+    }
+    &__photo {
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    &__descr {
+        padding-top: 6px;
+    }
+    &__title, &__sosial {
+        position: relative;
+        padding: 1px 0 0 12px;
+    }
+    &__link {
+        margin-right: 25px;
+        img {
+            width: 30px;
+            height: 30px;
+        }
+    }
+    &__form {
+        margin-top: 30px;
+        display: grid;
+        grid-template: 45px 190px 45px/ repeat(2, 280px) ;
+        justify-content: space-between;
+        row-gap: 30px;
+    }
+    &__input {
+        position: relative;
+        input {
+            width: 100%;
+            height: 100%;
+            padding: 0 20px;
+            font-size: 12px;
+        }
+        label {
+            position: absolute;
+            display: block;
+            background-color: #FFF;
+            padding: 0 8px 0 7px;
+            height: 18px;
+            font-size: 12px;
+            top: -20%;
+            left: 5%;
+        }
+    }
+    &__textarea {
+        position: relative;
+        grid-column: 1 / 3;
+        textarea {
+            width: 100%;
+            height: 100%;
+            resize: none;
+            padding: 20px;
+            font-size: 12px;
+        }
+        label {
+            position: absolute;
+            display: block;
+            background-color: #FFF;
+            padding: 0 8px 0 7px;
+            height: 18px;
+            font-size: 12px;
+            top: -9px;
+            left: 12px;
+        }
+    }
+    &__btn {
+        border: none;
+        font-weight: bold;
+        font-size: 14px;
+        line-height: 21px;
+    }
+    &__triggers {
+        grid-column: 1 / 3;
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        column-gap: 35px;
+    }
+    &__policy {
+        font-size: 12px;
+        line-height: 14px;
+        display: flex;
+        align-items: center;
+        span {
+            padding-left: 10px;
+        }
+    }
+}
