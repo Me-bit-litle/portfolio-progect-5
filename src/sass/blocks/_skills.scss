@@ -1,18 +1,5 @@
 .skills {
-    padding-top: 126px;       
-    &__title {
-        position: relative;
-        text-align: center;
-        @include before_circle;
-        &:before {
-            top: -6px;
-            left: 50%;
-            transform: translateX(-50%);
-        }
-    }
-    &__subtitle {
-        text-align: center;
-    }
+    padding-top: 126px;
     &__wrapper {
         margin: 60px 10px 0 10px;
         display: grid;
@@ -21,7 +8,6 @@
     }
     &__card {
         border: 1px solid #000;
-        width: 270px;
         padding: 30px;
     }
     &__line {
@@ -54,7 +40,6 @@
         &-bar {
             display: block;
             border-radius: 4px;
-            width: 350px;
             height: 14px;
             background: #e8e4de;
             span {
